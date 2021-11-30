@@ -18,6 +18,9 @@ from testflows._core.testtype import TestSubType
 
 RecipeModule = TestModule
 RecipeSuite = TestSuite
+RecipeCheck = TestCheck
+RecipeOutline = TestOutline
+RecipeBackground = TestBackground
 RecipeStep = TestStep
 
 class Recipe(Test):

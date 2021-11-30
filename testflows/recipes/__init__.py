@@ -13,9 +13,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 __author__ = "Vitaliy Zakaznikov"
-__version__ = "1.6.__VERSION__"
+__version__ = "1.7.__VERSION__"
 __license__ = f"""
-Copyright 2020 Katteli Inc.
+Copyright 2020-2021 Katteli Inc.
 TestFlows.com Open-Source Software Testing Framework (http://testflows.com)
 
 Licensed under the Apache License, Version 2.0 (the "License");
@@ -41,28 +41,48 @@ from .core import *
 __all__ = [
         "os", "sys",
         "Shell", "error", "errors",
-        "RecipeModule", "RecipeSuite", "RecipePlan", "RecipeStep",
-        "Step", "Given", "When", "Then", "But", "By", "Finally",
-        "Name", "Description", "Uid", "Tags", "Args",
+        "RecipeModule", "RecipeSuite", "RecipeOutline", "RecipePlan",
+        "RecipeBackground", "RecipeStep", "RecipeCheck",
+        "Recipe", "Module", "Suite", "Step", "Background", "Example", "Outline",
+        "Context",
+        "config",
+        "NullStep",
+        "Critical", "Major", "Minor", "Check", "Given", "When", "Then", "And", "But", "By", "Finally",
+        "loads", "ordered", "retry", "retries",
+        "has",
         "Flags",
         "OK", "XOK", "Fail", "XFail", "Skip", "Error", "XError", "Null", "XNull",
-        "XFails", "XFlags", "Repeat",
-        "Attributes", "ArgumentParser",
-        "Tag", "Argument", "Attribute", "Requirement", "Metric", "Ticket", "Value",
+        "Name", "Description", "Uid", "Tags", "Args", "Setup", "Parallel", "Executor",
+        "XFails", "XFlags", "Repeats", "Repeat", "Retries", "Retry", "Onlys", "Skips",
+        "OnlyTags", "SkipTags",
+        "FFails", "Skipped", "Failed", "XFailed", "XErrored", "Okayed", "XOkayed",
+        "Attributes", "Requirements", "Specifications", "Examples", "ArgumentParser",
+        "Node", "Tag", "Argument", "Attribute", "Requirement", "Specification", "Metric", "Value", "Ticket",
+        "Secret",
         "Table",
-        "The", "TheTags",
-        "top", "current", "previous", "load", "append_path",
-        "main", "args",
-        "metric", "ticket", "value", "note", "debug", "trace",
+        "The",
+        "load", "append_path",
+        "main", "args", "private_key",
+        "metric", "ticket", "value", "note", "debug", "trace", "text",
+        "attribute", "requirement", "tag",
+        "input", "current_time",
         "message", "exception", "ok", "fail", "skip", "err",
-        "null", "xok", "xfail", "xerr", "xnull", "pause", "getsattr",
+        "result", "null", "xok", "xfail", "xerr", "xnull", "pause", "getsattr",
         "current_dir", "current_module", "load_module",
         "TE", "UT", "SKIP", "EOK", "EFAIL", "EERROR", "ESKIP",
         "XOK", "XFAIL", "XERROR", "XNULL",
         "FAIL_NOT_COUNTED", "ERROR_NOT_COUNTED", "NULL_NOT_COUNTED",
-        "PAUSE", "PAUSE_BEFORE", "PAUSE_AFTER", "REPORT", "DOCUMENT",
-        "MANDATORY", "CLEAR",
+        "PAUSE", "PAUSE_BEFORE", "PAUSE_AFTER", "REPORT", "DOCUMENT", "MANUAL", "AUTO",
+        "MANDATORY", "CLEAR", "NOT_REPEATABLE",
         "EANY", "ERESULT", "XRESULT",
+        "PARALLEL", "NO_PARALLEL",
         "__author__", "__version__", "__license__",
-        "threading"
+        "join", "top", "current", "previous",
+        "Pool", "ThreadPool", "SharedThreadPool",
+        "AsyncPool", "SharedAsyncPool",
+        "parallel",
+        "objects",
+        "name",
+        "utils",
+        "rsa"
     ]
